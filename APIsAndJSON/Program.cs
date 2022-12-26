@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json.Linq;
 
 namespace APIsAndJSON
 {
@@ -7,12 +8,12 @@ namespace APIsAndJSON
         static void Main(string[] args)
         {
 
-            for(int i = 1; i <= 5; i++)
-            {
-                RonVSKanyeAPI.KanyeQuote();
+            //for(int i = 1; i <= 5; i++)
+            //{
+            //    RonVSKanyeAPI.KanyeQuote();
 
-                RonVSKanyeAPI.RonQuote();
-            }
+            //    RonVSKanyeAPI.RonQuote();
+            //}
 
             OpenWeatherMapAPI.Weather();
         }
